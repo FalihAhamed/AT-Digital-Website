@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.intro {
+    background-image: url("assets/banner2.png"); 
+    height: 150vh;
+    justify-content: center;
+    text-align: center;
+    color: #000000;  
+}
+
+.container {
+    width: 100%;
+}
+
+.nav-container {
+    padding-left: 4%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 0.4%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    background-color: #6B3CC9;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav li.left {
+    margin-right: auto; /* Pushes AT DIGITAL to the left */
+}
+
+nav li.left img {
+    width: 30%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -1%;
+    margin-right: 10px; /* Add some spacing between logo and text */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 50%;
+}
+
+.content {
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    margin-top: -33%;
+    margin-left: 5%;
+    text-align: justify;
+    background: linear-gradient(to bottom right, #1CBDDD, #4DCA79);
+    width: 50%;
+    color: #fff;
+    font-size: 19px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-left: 0%;
+}
+
+.cta {
+    background-color: #F28D35;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 0%;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 0.3rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    width: 33%;
+    text-align: center;
+}
+
+.stat p {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.section2 {
+  text-align: center;
+}
+
+.container2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.right-content {
+  width: 50%;
+  text-align: left;
+}
+
+.right-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.right-content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+h2{
+    color: #6B3CC9;
+}
+
+.container3 {
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.right-content-container3 {
+    width: 50%;
+}
+
+.left-content-container3 {
+    width: 50%;
+    text-align: right;
+}
+
+/* New section */
+.section3 {
+    text-align: center;
+    padding: 20px 300px;
+}
+
+.question {
+    background-color: #FAF8FF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faq {
+    text-align: left;
+}
+
+.question h3 {
+    color: #000000;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+.question h3::after {
+    content: '+';
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.question.active h3::after {
+    content: '-';
+}
+
+.answer {
+    color: #6F6C90;
+    font-size: 1em;
+    display: none;
+}
+
+.question.active .answer {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #6B3CC9;
+    color: #fff;
+    padding: 1.5%;
+    text-align: left;
+    justify-content: center;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.footer-column:nth-child(1) {
+    width: 50%;
+}
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3) {
+    width: 25%;
+}
+
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    font-size: 0.9em;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-small {
+    font-size: 0.8em;
+    margin-top: 20px;
+    text-align: center;
+}
+.underline {
+    border-top: 1px solid #fffefe;
+    width: 50%;
+    margin-left: 25%;
+}
+/* Adjustments for screens up to 1440px */
+@media only screen and (max-width: 1440px) {
+    .nav-container {
+      padding-left: 3%;
+      padding-right: 2%;
+      width: 100%;
+    }
+    .container2,
+    .container3 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .intro {
+         width: 105%;
+         height: 140vh;
+    }
+    footer {
+        width: 102%;
+    }
+  }
+  
+  /* Adjustments for screens up to 1200px */
+  @media only screen and (max-width: 1200px) {
+    .nav-container {
+      padding-left: 2%;
+      padding-right: 1%;
+      width: 105%;
+    }
+    .container2,
+    .container3 {
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+    .intro {
+        width: 108%;
+        height: 150vh;
+   }
+   footer {
+    width: 105%;
+}
+.content {
+    margin-top: -40%;
+    width: 60%;
+}
+  }
+  /* Adjustments for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+      padding-left: 1%;
+      padding-right: 0.5%;
+      width: 150%;
+    }
+    .container2,
+    .container3 {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .content {
+      width: 146%;
+      margin-left: 0%;
+      margin-top: -22%;
+    }
+    .intro {
+        width: 151%;
+        height: 130vh;
+   }
+   footer {
+    width: 148%;
+}
+.container2 {
+    margin-top: 5%;
+    margin-left: 0%;
+}
+
+.left-content {
+  width: 75%;
+  margin-left: -10%;
+}
+
+.right-content {
+  width: 75%;
+  text-align: left;
+}
+.section3 {
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    background-color: #FAF8FF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+  }
+  
+  /* Adjustments for screens up to 375px */
+  @media only screen and (max-width: 375px) {
+    .nav-container {
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+    }
+    .container2,
+    .container3 {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .cta {
+      padding: 8px 15px;
+    }
+  }
